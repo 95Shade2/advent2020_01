@@ -26,7 +26,7 @@ int Get_Answer(vector<int> data, int sum) {
         for (int y = x+1; y < data.size(); y++) {
             two = data[y];
 
-            for (int z = 0; z < data.size(); z++) {
+            for (int z = y + 1; z < data.size(); z++) {
                 three = data[z];
                 if (one + two + three == sum) {
                     cout << one << " + " << two << " + " << three << " = " << sum << endl;
