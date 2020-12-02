@@ -56,9 +56,11 @@ vector<int> Open(string filename) {
             getline(file, line);
         }
 
+        file.close();
         return file_data;
     }
     else {
+        file.close();
         Error();
     }
 }
